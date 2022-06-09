@@ -1,0 +1,125 @@
+.heading {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  color: #DC143C;
+}
+.productContainer {
+  display: flex;
+}
+
+.mainContainer {
+  display: inline-flexbox;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.searchContainer {
+  width: 100%;
+  display: flex;
+}
+
+.search {
+  margin: 20px;
+  border-radius: 25px;
+  border: 2px solid blue;
+  width: 30%;
+  height: 30px;
+  float: left;
+}
+
+.searchText {
+  border: none;
+  font-size: 15px;
+  float: left;
+  justify-content: center;
+  outline-style: none;
+  transform: translate(10%, 35%)
+}
+
+input[type="text" i] {
+  padding: 0px;
+  width: 60%;
+}
+
+.searchImage {
+  justify-content: center;
+  border: none;
+  width: 20px;
+  height: 20px;
+  float: right;
+  transform: translate(-50%, 25%)
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 -5px;
+  position: relative
+}
+
+.row:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+.cardGroupRow {
+  position: relative;
+  grid-template-columns: repeat(2,1fr);
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.createProduct {
+  float: right;
+  position: relative;
+  width: 20%;
+  height: 20%;
+  border: 2px solid #008080;
+  border-radius: 25px;
+  background: #48D1CC;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 20px;
+  padding: 5px;
+  cursor: pointer;
+}

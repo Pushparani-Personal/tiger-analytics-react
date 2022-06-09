@@ -1,0 +1,85 @@
+/* Create Project style */
+.popup-box {
+    position: fixed;
+    background: #AFEEEE;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 9%)
+  }
+   
+  .box {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: 60%;
+    max-height: 70vh;
+    margin-top: calc(100vh - 92vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #999;
+    overflow: auto;
+  }
+   
+  .close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(15% - 30px);
+    top: calc(100vh - 86vh - 52px);
+    background: #ededed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 20px;
+  }
+
+  .itemRow {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding-top: 15px;
+  }
+
+  .itemRowLabel {
+    width: 30%;
+    justify-content: center;
+    margin: auto;
+    color: #00008B; 
+  }
+
+  .itemRowText {
+    width: 60%;
+    border: 2px solid #4169E1;
+    border-radius: 6px;
+  }
+  .errorMessage {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px
+  }
+
+  .successMessage {
+    color: #2E8B57;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px
+  }
+
+  .submitButton {
+    margin: 20px;
+    width: 20%;
+    height: 5%;
+    border: 2px solid #008000;
+    border-radius: 25px;
+    background: #3CB371;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+  }
